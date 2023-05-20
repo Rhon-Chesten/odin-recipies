@@ -1,6 +1,7 @@
 body{
     background-color:white;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
 }
 
 main{
@@ -38,7 +39,7 @@ h1{
     right: 0px;
     top: 0px;
     z-index: 1;
-    position: absolute;
+    position: fixed;
 }
 
 .menu-image-food{
@@ -49,22 +50,53 @@ h1{
 
 .recipes{
     color:  rgb(227, 172, 31);
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    transition: border 0.015s;
 }
 
-nav{
-    
+.menu{
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    transition: width 0.09s, height 0.09s;
+}
+
+.menu:hover{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+    width: 405px;
+    height: 305px;
 }
 
 .list{
-    margin-top: 500px;
-    margin-left: 20px;
-    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 447px;
     padding-left: 20px;
-    border-left: 5px double  rgb(227, 172, 31);
+    border-left: 5px dotted  rgb(227, 172, 31);
+    border-right: 5px dotted  rgb(227, 172, 31);
+    background-color: white;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 730px;
 }
 
-p{
-    color: black;
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 1500px;
+}
+
+a{
+    color: rgb(182, 137, 25);
     font-size: 18px;
     text-decoration: none;
 }
