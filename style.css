@@ -1,0 +1,70 @@
+body{
+    background-color:white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+    background-color: rgb(227, 172, 31);
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    height: 55px;
+    align-items: flex-start;
+    justify-content: center;
+    z-index: 100;
+}
+
+h1{
+    color: white;
+    margin-left: 10px;
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.picture{
+    height: 400px;
+    margin-top: 55px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    z-index: 1;
+    position: absolute;
+}
+
+.menu-image-food{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.recipes{
+    color:  rgb(227, 172, 31);
+}
+
+nav{
+    
+}
+
+.list{
+    margin-top: 500px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 20px;
+    border-left: 5px double  rgb(227, 172, 31);
+}
+
+p{
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+}
